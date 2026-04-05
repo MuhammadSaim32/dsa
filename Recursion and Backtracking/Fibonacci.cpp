@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+
+void Fibonaci(int prev,int curr,int n){
+    --n;
+    if(n==0){
+        cout<<"The n term is  : "<<curr;
+        return;
+    }
+
+    Fibonaci(curr,prev+curr,n);
+}
+
+
+int fib(int n){
+    if(n<=1) return n;
+    return fib(n-1)+fib(n-2);
+}
+
+
+int main(){
+
+    cout<<fib(6);
+    return 0;
+}
