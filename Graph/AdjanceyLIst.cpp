@@ -80,7 +80,7 @@ int main()
     g.AddEdge(0, 1);
     g.AddEdge(1, 2);
     g.AddEdge(1, 3);
-    // g.AddEdge(2, 3); uncomment for dfs
+    // g.AddEdge(2, 3); comment for dfs
     g.AddEdge(2, 4);
 
     vector<bool> vist(5, false); // can allso make helper function for dfs
