@@ -58,7 +58,7 @@ public:
         }
     }
 
-    void DSF(int src, vector<bool> &vist) //O(V+E)
+    void DSF(int src, vector<bool> &vist) // O(V+E)
     {
         if (!vist[src])
         {
@@ -71,6 +71,27 @@ public:
             }
         }
     }
+
+    bool CycleDetectDFS(int src, vector<bool> &vist, int par) // O(V+E)
+    {
+
+        // cout << src << " ";
+        vist[src] = true;
+
+        for (auto n : l[src])
+        {
+            if (!vist[n])
+            {
+                if (CycleDetectDFS(n, vist, src))
+                    return true;
+            }
+            else if (n != par)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 };
 
 int main()
@@ -78,15 +99,17 @@ int main()
 
     Graph g(5);
     g.AddEdge(0, 1);
-    g.AddEdge(1, 2);
-    g.AddEdge(1, 3);
+    g.AddEdge(0, 2);
+    g.AddEdge(0, 3);
     // g.AddEdge(2, 3); comment for dfs
-    g.AddEdge(2, 4);
+    g.AddEdge(1, 2);
+    g.AddEdge(3, 4);
 
     vector<bool> vist(5, false); // can allso make helper function for dfs
     // g.PrintEdge();
-    g.BSF(0);
-    g.DSF(0, vist);
+    // g.BSF(0);
+    // g.DSF(0, vist);
+    cout << g.CycleDetectDFS(0, vist, -1);
 
     return 0;
 }
