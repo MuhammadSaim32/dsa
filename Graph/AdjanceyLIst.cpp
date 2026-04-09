@@ -2,6 +2,7 @@
 #include <list>
 #include <queue>
 #include <vector>
+#include <utility>
 using namespace std;
 
 class Graph
@@ -92,6 +93,36 @@ public:
         }
         return false;
     }
+
+    bool CycleDetectBFS(int src, vector<bool> &vist, int par)
+    {
+        queue<pair<int, int>> Q;
+        Q.push({src, par});
+        vist[src] = true;
+
+        while (Q.size() != 0)
+        {
+            int src = Q.front().first;
+            int par = Q.front().second;
+            Q.pop();
+            for (auto n : l[src])
+            {
+                if (!vist[n])
+                {
+                    Q.push({n, src});
+                    vist[n] = true;
+                }
+                else
+                {
+                    if (n != par)
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
 };
 
 int main()
@@ -109,7 +140,7 @@ int main()
     // g.PrintEdge();
     // g.BSF(0);
     // g.DSF(0, vist);
-    cout << g.CycleDetectDFS(0, vist, -1);
+    cout << g.CycleDetectBFS(0, vist, -1);
 
     return 0;
 }
