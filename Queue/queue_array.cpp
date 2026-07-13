@@ -33,11 +33,19 @@ public:
             return;
         }
 
-        cout << arr[front++] << " ";
+         arr[front++] ;
 
         if (front > end) {
             front = end = -1;
         }
+    }
+
+    int f(){
+        if(front!=-1){
+            return arr[front];
+        }
+
+        return -1;
     }
 
     bool empty() {
@@ -55,6 +63,7 @@ int main() {
 
 
     while (!q.empty()) {
+        cout<<q.f()<<endl;
         q.pop();
     }
 
