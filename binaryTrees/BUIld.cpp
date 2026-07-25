@@ -17,7 +17,7 @@ class Node{
 
 
 
-static int idx=-1;
+ int idx=-1;
 
 Node* BuildTreeFromPreOrder(vector<int> preorder){
 
