@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/saim/dsa/cp-prep/week-1/A. Team.cpp","tests":[{"id":1786736300998,"input":"3\n1 1 0\n1 1 1\n1 0 0\n","output":"2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/saim/dsa/cp-prep/week-1/A. Team.cpp","group":"local","local":true}
