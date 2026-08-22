@@ -36,8 +36,13 @@ public:
         }
     }
 
-    void BSF(int src) // O(V+E)
+    void BSF(int src)
     {
+        // O(V+E) In both BFS and DFS:
+        // V → visiting every node (push/pop in BFS, recursive call in DFS).
+        // E → checking every node's connections (edges)
+        // Together: O(V + E).
+
         vector<bool> vist(V, false);
         queue<int> q;
         q.push(src);
