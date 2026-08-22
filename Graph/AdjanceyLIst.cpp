@@ -52,7 +52,7 @@ public:
             {
                 if (!vist[n])
                 {
-                    q.push(n);
+                    q.push(n); // vip : remember why  vist[n]=true   here
                     vist[n] = true;
                 }
             }
@@ -129,18 +129,17 @@ int main()
 {
 
     Graph g(5);
+
     g.AddEdge(0, 1);
-    g.AddEdge(0, 2);
-    g.AddEdge(0, 3);
-    // g.AddEdge(2, 3); comment for dfs
     g.AddEdge(1, 2);
-    g.AddEdge(3, 4);
+    g.AddEdge(1, 3);
+    g.AddEdge(2, 4);
 
     vector<bool> vist(5, false); // can allso make helper function for dfs
-    // g.PrintEdge();
+    g.PrintEdge();
     // g.BSF(0);
     // g.DSF(0, vist);
-    cout << g.CycleDetectBFS(0, vist, -1);
+    cout << g.CycleDetectDFS(0, vist, -1);
 
     return 0;
 }
