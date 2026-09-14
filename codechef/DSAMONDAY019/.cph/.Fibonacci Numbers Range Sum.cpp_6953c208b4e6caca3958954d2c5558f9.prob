@@ -1,0 +1,1 @@
+{"name":"Local: Fibonacci Numbers Range Sum","url":"/home/pc/dsa/codechef/DSAMONDAY019/Fibonacci Numbers Range Sum.cpp","tests":[{"id":1788796763027,"input":"5 2\n1 2 3 4 5\n2 4\n1 5","output":"6\n12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pc/dsa/codechef/DSAMONDAY019/Fibonacci Numbers Range Sum.cpp","group":"local","local":true}

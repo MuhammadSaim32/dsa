@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/pc/dsa/cp-prep/week-2/A. Vanya and Fence.cpp","tests":[{"id":1788774227262,"input":"6 5\n7 6 8 9 10 5\n","output":"11\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pc/dsa/cp-prep/week-2/A. Vanya and Fence.cpp","group":"local","local":true}

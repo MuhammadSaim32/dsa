@@ -1,0 +1,1 @@
+{"name":"Local: Unequal Shuffle","url":"/home/pc/dsa/codechef/START255D/Unequal Shuffle.cpp","tests":[{"id":1788964909227,"input":"4\n2\nab\naa\n3\nabb\nbaa\n4\naabb\nbaba\n4\nabba\naaab","output":"NO\nYES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pc/dsa/codechef/START255D/Unequal Shuffle.cpp","group":"local","local":true}
