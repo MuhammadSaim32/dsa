@@ -1,0 +1,1 @@
+{"name":"Local: Best Seat","url":"/home/pc/dsa/codechef/DSAMONDAY020/Best Seat.cpp","tests":[{"id":1789395239162,"input":"5\n10 20 30 40 50","output":"30"},{"id":1789396543555,"input":"6\n1 2 3 7 8 9","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pc/dsa/codechef/DSAMONDAY020/Best Seat.cpp","group":"local","local":true}
