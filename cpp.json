@@ -1,149 +1,185 @@
 {
-    "Competitive Programming Template": {
-        "prefix": "cptc",
-        "body": [
-            "#include<bits/stdc++.h>",
-            "using namespace std;",
-            "",
-            "#define pb push_back",
-            "#define fi first",
-            "#define se second",
-            "#define pob pop_back",
-            "#define ll long long",
-            "#define all(x) x.begin(), x.end()",
-            "",
-            "",
-            "void solve()",
-            "{",
-            "    $0",
-            "}",
-            "",
-            "int main()",
-            "{",
-            "    int t;",
-            "    cin >> t;",
-            "",
-            "    while (t--)",
-            "    {",
-            "        solve();",
-            "    }",
-            "",
-            "    return 0;",
-            "}"
-        ],
-        "description": "C++ competitive programming template with solve() and test cases"
-    },
-    "Competitive Programming Template Without TestCase": {
-        "prefix": "cp",
-        "body": [
-            "#include<bits/stdc++.h>",
-            "using namespace std;",
-            "",
-            "",
-            "#define pb push_back",
-            "#define fi first",
-            "#define se second",
-            "#define pob pop_back",
-            "#define ll long long",
-            "#define all(x) x.begin(), x.end()",
-            "",
-            "",
-            "void solve()",
-            "{",
-            "    $0",
-            "}",
-            "",
-            "int main()",
-            "{",
-            "    solve();",
-            "",
-            "    return 0;",
-            "}"
-        ],
-        "description": "C++ competitive programming template without test cases"
-    },
-    "For Loop": {
-        "prefix": "fori",
-        "body": [
-            "for (int i = $1; i < $2; i++) {",
-            "    $0",
-            "}"
-        ],
-        "description": "Basic C++ for loop"
-    },
-    "Inner For Loop": {
-        "prefix": "forj",
-        "body": [
-            "for (int j = $1; j < $2; j++) {",
-            "    $0",
-            "}"
-        ],
-        "description": "C++ inner j loop"
-    },
-    "To Lower": {
-        "prefix": "tolowerstr",
-        "body": [
-            "string toLowerStr(string s) {",
-            "    for (char &c : s)",
-            "        c = tolower(c);",
-            "",
-            "    return s;",
-            "}"
-        ],
-        "description": "Convert a string to lowercase"
-    },
-    "To Upper": {
-        "prefix": "toupperstr",
-        "body": [
-            "string toUpperStr(string s) {",
-            "    for (char &c : s)",
-            "        c = toupper(c);",
-            "",
-            "    return s;",
-            "}"
-        ],
-        "description": "Convert a string to uppercase"
-    },
-    "Is Vowel": {
-        "prefix": "isvowel",
-        "body": [
-            "bool isVowel(char c)",
-            "{",
-            "    c = tolower(c);",
-            "    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';",
-            "}"
-        ],
-        "description": "Check if a character is a vowel"
-    },
-    "Is Prime": {
-        "prefix": "isprime",
-        "body": [
-            "bool isPrime(int n) {",
-            "    if (n < 2) return false;",
-            "",
-            "    for (int i = 2; i * i <= n; i++) {",
-            "        if (n % i == 0)",
-            "            return false;",
-            "    }",
-            "",
-            "    return true;",
-            "}"
-        ],
-        "description": "Check if a number is prime"
-    },
-    "Prime Sieve": {
-        "prefix": "sieve",
-        "body": [
-            "vector<bool> isPrime(n + 1, true);",
-            "isPrime[0] = isPrime[1] = false;",
-            "",
-            "for (int i = 2; i * i <= n; i++) {",
-            "    if (isPrime[i]) {",
-            "        for (int j = i * i; j <= n; j += i)",
-            "            isPrime[j] = false;",
-            "    }",
-            "}"
-        ],
-        "description": "Sieve of Eratosthenes"
-    }
+	"Competitive Programming Template": {
+		"prefix": "cptc",
+		"body": [
+			"#include<bits/stdc++.h>",
+			"",
+			"",
+			"#define pb push_back",
+			"#define fi first",
+			"#define se second",
+			"#define pob pop_back",
+			"#define ll long long",
+			"#define all(x) x.begin(), x.end()",
+			"#define endl '\\n'",
+			"",
+			"// Debug",
+			"",
+			"#define debug(x) cerr << #x << \" = \" << x << '\\n'",
+			"#define debugv(v) cerr << #v << \": \"; for (auto x : v) cerr << x << ' '; cerr << '\\n'",
+			"",
+			"using namespace std;",
+			"",
+			"",
+			"",
+			"void solve()",
+			"{",
+			"    $0",
+			"}",
+			"",
+			"int main()",
+			"{",
+			"    int t;",
+			"    cin >> t;",
+			"",
+			"    while (t--)",
+			"    {",
+			"ios::sync_with_stdio(false);",
+			"cin.tie(nullptr);",
+			"        solve();",
+			"    }",
+			"",
+			"    return 0;",
+			"}"
+		],
+		"description": "C++ competitive programming template with solve() and test cases"
+	},
+	"Competitive Programming Template Without TestCase": {
+		"prefix": "cp",
+		"body": [
+			"#include<bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"",
+			"#define pb push_back",
+			"#define fi first",
+			"#define se second",
+			"#define pob pop_back",
+			"#define ll long long",
+			"#define all(x) x.begin(), x.end()",
+			"#define endl '\\n'",
+			"",
+			"// Debug",
+			"",
+			"#define debug(x) cerr << #x << \" = \" << x << '\\n'",
+			"#define debugv(v) cerr << #v << \": \"; for (auto x : v) cerr << x << ' '; cerr << '\\n'",
+			"",
+			"",
+			"void solve()",
+			"{",
+			"    $0",
+			"}",
+			"",
+			"int main()",
+			"{",
+			"    ios::sync_with_stdio(false);",
+			"    cin.tie(nullptr);",
+			"",
+			"    solve();",
+			"",
+			"    return 0;",
+			"}"
+		],
+		"description": "C++ competitive programming template without test cases"
+	},
+	"For Loop": {
+		"prefix": "fori",
+		"body": [
+			"for (int i = $1; i < $2; i++) {",
+			"    $0",
+			"}"
+		],
+		"description": "Basic C++ for loop"
+	},
+	"Inner For Loop": {
+		"prefix": "forj",
+		"body": [
+			"for (int j = $1; j < $2; j++) {",
+			"    $0",
+			"}"
+		],
+		"description": "C++ inner j loop"
+	},
+	"To Lower": {
+		"prefix": "tolowerstr",
+		"body": [
+			"string toLowerStr(string s) {",
+			"    for (char &c : s)",
+			"        c = tolower(c);",
+			"",
+			"    return s;",
+			"}"
+		],
+		"description": "Convert a string to lowercase"
+	},
+	"To Upper": {
+		"prefix": "toupperstr",
+		"body": [
+			"string toUpperStr(string s) {",
+			"    for (char &c : s)",
+			"        c = toupper(c);",
+			"",
+			"    return s;",
+			"}"
+		],
+		"description": "Convert a string to uppercase"
+	},
+	"Is Vowel": {
+		"prefix": "isvowel",
+		"body": [
+			"bool isVowel(char c)",
+			"{",
+			"    c = tolower(c);",
+			"    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';",
+			"}"
+		],
+		"description": "Check if a character is a vowel"
+	},
+	"Is Prime": {
+		"prefix": "isprime",
+		"body": [
+			"bool isPrime(int n) {",
+			"    if (n < 2) return false;",
+			"",
+			"    for (int i = 2; i * i <= n; i++) {",
+			"        if (n % i == 0)",
+			"            return false;",
+			"    }",
+			"",
+			"    return true;",
+			"}"
+		],
+		"description": "Check if a number is prime"
+	},
+	"Prime Sieve": {
+		"prefix": "sieve",
+		"body": [
+			"vector<bool> isPrime(n + 1, true);",
+			"isPrime[0] = isPrime[1] = false;",
+			"",
+			"for (int i = 2; i * i <= n; i++) {",
+			"    if (isPrime[i]) {",
+			"        for (int j = i * i; j <= n; j += i)",
+			"            isPrime[j] = false;",
+			"    }",
+			"}"
+		],
+		"description": "Sieve of Eratosthenes"
+	},
+	"isSorted Function": {
+		"prefix": "issort",
+		"body": [
+			"bool isSorted(vector<int>& v)",
+			"{",
+			"    for (int i = 1; i < v.size(); i++)",
+			"    {",
+			"        if (v[i] < v[i - 1])",
+			"            return false;",
+			"    }",
+			"",
+			"    return true;",
+			"}"
+		],
+		"description": "Check if an array/vector is sorted"
+	}
 }
