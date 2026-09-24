@@ -1,0 +1,1 @@
+{"name":"Local: Bus Seating","url":"/home/pc/dsa/codechef/START256D/Bus Seating.cpp","tests":[{"id":1789569705499,"input":"3\n2 3\n2 1\n4 8","output":"2\n0\n8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pc/dsa/codechef/START256D/Bus Seating.cpp","group":"local","local":true}

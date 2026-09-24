@@ -1,0 +1,1 @@
+{"name":"Local: Fixed Points","url":"/home/pc/dsa/codechef/START256D/Fixed Points.cpp","tests":[{"id":1789570943052,"input":"5\n1 0\n1 1\n2 0\n2 1\n3 1","output":"No\nYes\nYes\nNo\nYes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pc/dsa/codechef/START256D/Fixed Points.cpp","group":"local","local":true}
