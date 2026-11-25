@@ -1,0 +1,1 @@
+{"name":"Local: Double and Drop (Easy)","url":"/home/pc/dsa/codechef/START266D/Double and Drop (Easy).cpp","tests":[{"id":1795620377564,"input":"4\n3\n1 2 3\n2\n5 5\n3\n1 6 10\n5\n7 3 9 2 9","output":"4\n5\n11\n24"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pc/dsa/codechef/START266D/Double and Drop (Easy).cpp","group":"local","local":true}

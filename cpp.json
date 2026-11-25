@@ -11,8 +11,10 @@
 			"#define pob pop_back",
 			"#define ll long long",
 			"#define all(x) x.begin(), x.end()",
+			"#define allrev(x) x.rbegin(), x.rend()",
 			"#define endl '\\n'",
-			"",
+			"#define vi vector<int>",
+			"#define vl vector<ll>",
 			"// Debug",
 			"",
 			"#define debug(x) cerr << #x << \" = \" << x << '\\n'",
@@ -184,5 +186,18 @@
 			"}"
 		],
 		"description": "Check if an array/vector is sorted"
+	},
+	"Is All Odd": {
+		"prefix": "isallodd",
+		"body": [
+			"bool isAllOdd(vector<int>& a) {",
+			"    for (int x : a) {",
+			"        if (x % 2 == 0)",
+			"            return false;",
+			"    }",
+			"    return true;",
+			"}"
+		],
+		"description": "Function to check if all array elements are odd"
 	}
 }

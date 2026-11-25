@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/pc/dsa/CodeForces/contests/1125 (Div. 3)/A. In Search of Convenience.cpp","tests":[{"id":1791391509660,"input":"3\n0 0 1\n5 5 5\n10 10 13\n","output":"0 1\n2 1\n-2 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pc/dsa/CodeForces/contests/1125 (Div. 3)/A. In Search of Convenience.cpp","group":"local","local":true}
